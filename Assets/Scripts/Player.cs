@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [Header("Configs")]
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
 
     [Header("States")]
     bool isAlive = true;
@@ -17,7 +18,8 @@ public class Player : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimatior;
     CapsuleCollider2D myBodyCollider;
-    BoxCollider2D myFeetCollider;
+    Feet myFeet;
+    SpriteRenderer mySprite;
 
     // Start is called before the first frame update
     void Start()
@@ -25,13 +27,16 @@ public class Player : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimatior = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
-        myFeetCollider = GetComponent<BoxCollider2D>();
+        myFeet = GetComponentInChildren<Feet>();
+        mySprite = GetComponentInChildren<SpriteRenderer>();
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!isAlive){ return; }
         Run();
         Jump();
         flipSprite();
@@ -50,9 +55,10 @@ public class Player : MonoBehaviour
     }
 
     private void Jump(){
-        if(!(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))){ return; }
+        bool feetOnGround = myFeet;
+        if(!(feetOnGround)){ return; }
 
-        if(Input.GetButtonDown("Jump")){
+        else if(Input.GetButtonDown("Jump")){
             
                  Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             myRigidbody.velocity += jumpVelocityToAdd;
@@ -64,5 +70,20 @@ public class Player : MonoBehaviour
     private void flipSprite(){
         bool playerHasHorizontalspeed = Mathf.Abs(myRigidbody.velocity.x)> Mathf.Epsilon;
         gameObject.transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+    }
+
+    public void HitByEnemy()
+    {
+        if(isAlive){
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        isAlive = false;
+        Debug.Log("Dead!");
+        myRigidbody.velocity = deathKick;
+        myAnimatior.SetTrigger("Die");
     }
 }
