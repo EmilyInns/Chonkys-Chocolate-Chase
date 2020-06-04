@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     }
 
     private void Jump(){
-        bool feetOnGround = myFeet;
+        bool feetOnGround = myFeet.isTouchingGround();
         if(!(feetOnGround)){ return; }
 
         else if(Input.GetButtonDown("Jump")){
