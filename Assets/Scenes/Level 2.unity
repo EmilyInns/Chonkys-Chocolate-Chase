@@ -370,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -78.08, y: 0.99522257, z: -10}
+  m_LocalPosition: {x: -1.2799988, y: 0.99522257, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703783570}
@@ -7206,7 +7206,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1150529093
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -9825,6 +9825,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 398591553, guid: d02f64e2c11cb24438e93682f1d3e816, type: 3}
+      propertyPath: deathKick.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5185255366950548605, guid: d02f64e2c11cb24438e93682f1d3e816,
         type: 3}
       propertyPath: m_Name
