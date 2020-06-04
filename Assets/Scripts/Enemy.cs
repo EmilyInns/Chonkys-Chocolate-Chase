@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
        // myRigidBody.velocity = new Vector2(enemySpeed, 0f);
        mySprite = GetComponentInChildren<SpriteRenderer>();
+       
     }
 
     internal void TurnAround()
@@ -38,10 +39,15 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-     Player player = other.gameObject.GetComponent<Player>();
+    LayerMask collidersLayer = other.gameObject.layer;
+    Player player = other.gameObject.GetComponent<Player>();
+     
      if (player){
          player.HitByEnemy();
      }
+     /*if(collidersLayer == LayerMask.NameToLayer("Ground")){
+         TurnAround();
+     }*/
         
 }
 }

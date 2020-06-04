@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 5
   jumpSpeed: 18
-  deathKick: {x: 15, y: 15}
+  deathKick: {x: 10, y: 15}
 --- !u!1 &7977961117462191228
 GameObject:
   m_ObjectHideFlags: 0
