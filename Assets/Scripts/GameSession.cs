@@ -29,7 +29,6 @@ public class GameSession : MonoBehaviour
         
         if(lives>1){
             TakeLife();
-            Debug.Log("Player now has " + lives + " lives");
         }
         else{
             

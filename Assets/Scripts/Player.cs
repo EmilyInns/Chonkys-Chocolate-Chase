@@ -84,7 +84,6 @@ public class Player : MonoBehaviour
     private IEnumerator Die()
     {
         isAlive = false;
-        Debug.Log("Dead!");
         deathKick.x = Mathf.Sign(myRigidbody.velocity.x)*deathKick.x * -1;
         myRigidbody.velocity = deathKick;
         myAnimatior.SetTrigger("Die");
