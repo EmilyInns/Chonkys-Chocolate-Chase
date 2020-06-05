@@ -20,6 +20,7 @@ public class GameSession : MonoBehaviour
     }
 
     public void ProcessPlayerDeath(){
+        Debug.Log("On death player had " + lives + " lives");
         if(lives>1){
             TakeLife();
         }

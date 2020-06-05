@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [Header("Configs")]
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float deathTime = 2f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
 
     [Header("States")]
@@ -75,16 +76,19 @@ public class Player : MonoBehaviour
     public void HitByEnemy()
     {
         if(isAlive){
-            Die();
+            StartCoroutine(Die());
+            
         }
     }
 
-    private void Die()
+    private IEnumerator Die()
     {
         isAlive = false;
         Debug.Log("Dead!");
         deathKick.x = Mathf.Sign(myRigidbody.velocity.x)*deathKick.x * -1;
         myRigidbody.velocity = deathKick;
         myAnimatior.SetTrigger("Die");
+        yield return new WaitForSeconds(deathTime);
+        FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
 }
