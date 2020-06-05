@@ -16,8 +16,13 @@ public class LevelExit : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if(!audioSource.isPlaying){ audioSource.Play(0); }
-        StartCoroutine(LoadNextLevel());
+        Player player = other.GetComponent<Player>();
+        if(player&&player.GetIsAlive()){
+
+            if(!audioSource.isPlaying){ audioSource.Play(0); }
+            StartCoroutine(LoadNextLevel());
+
+        } 
     }
 
     IEnumerator LoadNextLevel(){

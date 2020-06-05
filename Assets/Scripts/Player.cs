@@ -90,4 +90,8 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(deathTime);
         FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
+
+    public bool GetIsAlive(){
+        return isAlive;
+    }
 }
