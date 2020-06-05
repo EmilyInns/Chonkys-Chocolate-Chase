@@ -168,8 +168,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0076904334, y: 0.025141241}
-  m_Size: {x: 1.7508471, y: 1.1307074}
+  m_Offset: {x: 0.026391149, y: -0.023950165}
+  m_Size: {x: 1.5638454, y: 1.0325314}
   m_Direction: 1
 --- !u!114 &398591553
 MonoBehaviour:
@@ -185,7 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 5
   jumpSpeed: 18
-  deathKick: {x: 5, y: 15}
+  deathTime: 2
+  deathKick: {x: 10, y: 15}
 --- !u!1 &7977961117462191228
 GameObject:
   m_ObjectHideFlags: 0

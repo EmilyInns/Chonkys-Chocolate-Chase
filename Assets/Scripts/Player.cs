@@ -9,11 +9,15 @@ public class Player : MonoBehaviour
     [Header("Configs")]
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+
+
+    [SerializeField] float starPowerTime = 8f;
     [SerializeField] float deathTime = 2f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
 
     [Header("States")]
     bool isAlive = true;
+    bool starPowered = false;
 
 [Header ("Cached Component References")]
     Rigidbody2D myRigidbody;
@@ -93,5 +97,30 @@ public class Player : MonoBehaviour
 
     public bool GetIsAlive(){
         return isAlive;
+    }
+
+        public void StarPower()
+    {
+        Debug.Log("In starpower");
+        if(!starPowered)
+        {
+            StartCoroutine(PoweredUp());
+        }
+        
+    }
+
+    private IEnumerator PoweredUp()
+    {
+        starPowered = true;
+        Debug.Log("starpowered!");
+        GetComponentInChildren<SpriteRenderer>().color = new Color(255,23,26,255);
+        yield return new WaitForSeconds(starPowerTime);
+        starPowered = false;
+        Debug.Log("star end");
+        GetComponentInChildren<SpriteRenderer>().color = new Color(255,255,255,255);
+    }
+
+    public bool isStarPowered(){
+        return starPowered;
     }
 }

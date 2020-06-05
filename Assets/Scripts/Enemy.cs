@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 3f;
+    [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
 
     Rigidbody2D myRigidBody;
     SpriteRenderer mySprite;
@@ -42,13 +43,22 @@ public class Enemy : MonoBehaviour
     LayerMask collidersLayer = other.gameObject.layer;
     Player player = other.gameObject.GetComponent<Player>();
      
-     if (player){
+     if (player && !player.isStarPowered()){
          player.HitByEnemy();
+     }
+     else if(player && player.isStarPowered()){
+         Die();
      }
      /*if(collidersLayer == LayerMask.NameToLayer("Ground")){
          TurnAround();
      }*/
         
 }
+
+    private void Die()
+    {
+    // myRigidBody.velocity = deathKick;
+       Destroy(gameObject);
+    }
 }
 

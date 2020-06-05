@@ -7,6 +7,7 @@ public class Candy : MonoBehaviour
 {
     AudioSource audioSource;
     protected GameSession gameSession;
+    protected Player player;
     [SerializeField] float soundVolume = 5f;
     [SerializeField] protected int scoreValue = 100;
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class Candy : MonoBehaviour
     {
         gameSession = FindObjectOfType<GameSession>();
         audioSource = GetComponent<AudioSource>();
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
