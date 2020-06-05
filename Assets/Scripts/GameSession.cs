@@ -36,9 +36,19 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
+    public void AddLife(){
+        lives++;
+        Debug.Log("Total lives are: " + lives);
+    }
+
     private void ResetGameSession()
     {
         SceneManager.LoadScene(0);
         Destroy(gameObject);
+    }
+
+    public void addScore(int amount){
+        score += amount;
+        Debug.Log("Total score is: " + score);
     }
 }

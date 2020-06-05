@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6698106827155964508}
   - component: {fileID: 6698106827155964509}
-  - component: {fileID: 6698106827155964511}
+  - component: {fileID: 7182625215927218069}
   - component: {fileID: 6698106827155964510}
   - component: {fileID: 6698106827155964505}
   m_Layer: 13
@@ -54,7 +54,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6698106827155964511
+--- !u!114 &7182625215927218069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,10 +63,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6698106827155964482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9668803c2a6868a42b5cf3ba4bd9ba25, type: 3}
+  m_Script: {fileID: 11500000, guid: 02eb51b1a36149e4c986fafb9628e86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundVolume: 5
 --- !u!58 &6698106827155964510
 CircleCollider2D:
   m_ObjectHideFlags: 0
