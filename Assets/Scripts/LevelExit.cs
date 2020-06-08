@@ -19,7 +19,7 @@ public class LevelExit : MonoBehaviour
         Player player = other.GetComponent<Player>();
         if(player&&player.GetIsAlive()){
 
-            if(!audioSource.isPlaying){ audioSource.Play(0); }
+            if(!audioSource.isPlaying){ audioSource.Play(); }
             StartCoroutine(LoadNextLevel());
 
         } 
