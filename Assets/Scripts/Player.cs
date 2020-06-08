@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] float starPowerTime = 8f;
     [SerializeField] float deathTime = 2f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
+    [SerializeField] GameObject StarVFX;
 
     [Header("States")]
     bool isAlive = true;
@@ -114,6 +115,8 @@ public class Player : MonoBehaviour
         starPowered = true;
         Debug.Log("starpowered!");
         GetComponentInChildren<SpriteRenderer>().color = new Color(255,23,26,255);
+        GameObject StarVFXobject = Instantiate(StarVFX, transform.position, Quaternion.identity);
+        StarVFXobject.transform.parent = gameObject.transform;
         yield return new WaitForSeconds(starPowerTime);
         starPowered = false;
         Debug.Log("star end");

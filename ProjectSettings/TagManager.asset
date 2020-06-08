@@ -62,3 +62,6 @@ TagManager:
   - name: Pickups
     uniqueID: 4264965365
     locked: 0
+  - name: VFX
+    uniqueID: 190653697
+    locked: 0
