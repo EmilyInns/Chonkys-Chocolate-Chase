@@ -115,8 +115,12 @@ public class Player : MonoBehaviour
         starPowered = true;
         Debug.Log("starpowered!");
         GetComponentInChildren<SpriteRenderer>().color = new Color(255,23,26,255);
-        GameObject StarVFXobject = Instantiate(StarVFX, transform.position, Quaternion.identity);
+        var starVFXRotation = new Vector3(-90,0,1);
+        Quaternion myRotation = Quaternion.identity;
+        myRotation.eulerAngles = starVFXRotation;
+        GameObject StarVFXobject = Instantiate(StarVFX, transform.position, myRotation);
         StarVFXobject.transform.parent = gameObject.transform;
+        
         yield return new WaitForSeconds(starPowerTime);
         starPowered = false;
         Debug.Log("star end");
