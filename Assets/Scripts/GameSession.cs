@@ -56,6 +56,7 @@ public class GameSession : MonoBehaviour
     }
 
     public void addScore(int amount){
+        Debug.Log("Adding " + amount);
         score += amount;
         UpdateText();
     }

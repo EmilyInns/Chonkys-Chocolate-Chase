@@ -25,7 +25,7 @@ public class Candy : MonoBehaviour
     }
 
     protected void OnTriggerEnter2D(Collider2D other){
-        
+        if(other.gameObject.GetComponent<Feet>()){ return; }
         PickedUp();
         
     }
