@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2490369883617143305}
   - component: {fileID: 8646795309744495594}
   m_Layer: 0
-  m_Name: Explosion Particles (1)
+  m_Name: StarPowerVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3045593446739591575}
   serializedVersion: 6
-  lengthInSec: 7
+  lengthInSec: 7.8
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
