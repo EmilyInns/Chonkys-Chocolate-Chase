@@ -75,7 +75,9 @@ public class Player : MonoBehaviour
 
     private void flipSprite(){
         bool playerHasHorizontalspeed = Mathf.Abs(myRigidbody.velocity.x)> Mathf.Epsilon;
-        gameObject.transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+        if(Mathf.Sign(myRigidbody.velocity.x)==1){ myAnimatior.SetBool("isFlipped", false); }
+        if(Mathf.Sign(myRigidbody.velocity.x)== -1){ myAnimatior.SetBool("isFlipped", true); }
+       // gameObject.transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
     }
 
     public void HitByEnemy()

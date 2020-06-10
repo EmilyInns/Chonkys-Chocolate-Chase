@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: VCR_OSD_MONO_1
+  m_Name: VCR_OSD_MONO_2
   m_EditorClassIdentifier: 
-  hashCode: -597227310
+  hashCode: -597227311
   material: {fileID: 21270341749108384}
   materialHashCode: -1746968295
   m_Version: 1.1.0
@@ -2510,7 +2510,7 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0.8679245, g: 0.23335704, b: 0.5708704, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!28 &28314863759299408
 Texture2D:
   m_ObjectHideFlags: 0
