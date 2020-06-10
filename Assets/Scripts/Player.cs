@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [Header("Configs")]
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+    float lastVelocity;
 
 
     [SerializeField] float starPowerTime = 8f;
@@ -56,6 +57,8 @@ public class Player : MonoBehaviour
         bool playerHasHorizontalspeed = Mathf.Abs(myRigidbody.velocity.x)> Mathf.Epsilon;
         if(playerHasHorizontalspeed){
         myAnimatior.SetBool("isRunning", true);
+        lastVelocity = myRigidbody.velocity.x;
+        
         }
         else{ myAnimatior.SetBool("isRunning", false); }
     }
@@ -74,9 +77,10 @@ public class Player : MonoBehaviour
     }
 
     private void flipSprite(){
-        bool playerHasHorizontalspeed = Mathf.Abs(myRigidbody.velocity.x)> Mathf.Epsilon;
-        if(Mathf.Sign(myRigidbody.velocity.x)==1){ myAnimatior.SetBool("isFlipped", false); }
-        if(Mathf.Sign(myRigidbody.velocity.x)== -1){ myAnimatior.SetBool("isFlipped", true); }
+        
+        myAnimatior.SetBool("isFlipped", lastVelocity < 0); 
+     //   if(Mathf.Sign(myRigidbody.velocity.x)==1){ myAnimatior.SetBool("isFlipped", false); }
+     //   if(Mathf.Sign(myRigidbody.velocity.x)== -1){ myAnimatior.SetBool("isFlipped", true); }
        // gameObject.transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
     }
 
