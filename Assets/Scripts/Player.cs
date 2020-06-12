@@ -14,8 +14,10 @@ public class Player : MonoBehaviour
 
     [SerializeField] float starPowerTime = 8f;
     [SerializeField] float deathTime = 2f;
+    [SerializeField] float soundVolume = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
     [SerializeField] GameObject StarVFX;
+    [SerializeField] AudioClip JumpSound;
 
     [Header("States")]
     bool isAlive = true;
@@ -27,6 +29,8 @@ public class Player : MonoBehaviour
     CapsuleCollider2D myBodyCollider;
     Feet myFeet;
     SpriteRenderer mySprite;
+
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +75,7 @@ public class Player : MonoBehaviour
             
                  Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             myRigidbody.velocity += jumpVelocityToAdd;
+            AudioSource.PlayClipAtPoint(JumpSound, Camera.main.transform.position, soundVolume);
             }
            
         
@@ -79,9 +84,7 @@ public class Player : MonoBehaviour
     private void flipSprite(){
         
         myAnimatior.SetBool("isFlipped", lastVelocity < 0); 
-     //   if(Mathf.Sign(myRigidbody.velocity.x)==1){ myAnimatior.SetBool("isFlipped", false); }
-     //   if(Mathf.Sign(myRigidbody.velocity.x)== -1){ myAnimatior.SetBool("isFlipped", true); }
-       // gameObject.transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+
     }
 
     public void HitByEnemy()
