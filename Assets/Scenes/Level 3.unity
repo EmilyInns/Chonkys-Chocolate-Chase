@@ -491,7 +491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.548172, y: 0.9952204, z: -10}
+  m_LocalPosition: {x: -9.539383, y: 0.9952204, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703783570}
@@ -15283,8 +15283,8 @@ MonoBehaviour:
   m_text: But not all chocolates only give score! The chocolate heart gives Chonky
     an extra life too!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f50f19d40d775274eb4c911a53141f3c, type: 2}
-  m_sharedMaterial: {fileID: 21270341749108384, guid: f50f19d40d775274eb4c911a53141f3c,
+  m_fontAsset: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346, type: 2}
+  m_sharedMaterial: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

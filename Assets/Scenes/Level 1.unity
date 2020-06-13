@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Collect yummy chocolate to gain score!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 58e5b9932b9766f419ccfdf2d91cccf8, type: 2}
-  m_sharedMaterial: {fileID: 21238315368359288, guid: 58e5b9932b9766f419ccfdf2d91cccf8,
+  m_fontAsset: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346, type: 2}
+  m_sharedMaterial: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -337,8 +337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Use WASD or arrow keys to move and space to jump
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 58e5b9932b9766f419ccfdf2d91cccf8, type: 2}
-  m_sharedMaterial: {fileID: 21238315368359288, guid: 58e5b9932b9766f419ccfdf2d91cccf8,
+  m_fontAsset: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346, type: 2}
+  m_sharedMaterial: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 41
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
     spaceCount: 10
     wordCount: 11
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -12646,17 +12646,29 @@ PrefabInstance:
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 44
+      value: 58
       objectReference: {fileID: 0}
+    - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346,
+        type: 2}
+    - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
+        type: 2}
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -120.89
+      value: -118.71
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 66.69
+      value: 71.05
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -12838,7 +12850,7 @@ PrefabInstance:
     - target: {fileID: 8214356114498173615, guid: ca7531755a2a9cd47b0b174b1c9fb126,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.536732
+      value: -9.526566
       objectReference: {fileID: 0}
     - target: {fileID: 8214356114498173615, guid: ca7531755a2a9cd47b0b174b1c9fb126,
         type: 3}
