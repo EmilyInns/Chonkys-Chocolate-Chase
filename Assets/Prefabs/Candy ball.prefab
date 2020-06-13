@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9668803c2a6868a42b5cf3ba4bd9ba25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundVolume: 0.2
+  soundVolume: 1
   scoreValue: 100
 --- !u!58 &6129910256787257295
 CircleCollider2D:
@@ -190,7 +190,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 113b7518ecdb21f458e7e90a431b59d3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a7c160ecf4057634ba6c2d119843f482, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
