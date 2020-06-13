@@ -15458,6 +15458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 440167993341118444, guid: 4e6845d6ea673fd43975af1a0c6925db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 440167993341118446, guid: 4e6845d6ea673fd43975af1a0c6925db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15517,11 +15522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440167994501215490, guid: 4e6845d6ea673fd43975af1a0c6925db,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -63.80005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e6845d6ea673fd43975af1a0c6925db, type: 3}
