@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.548172, y: 0.9952204, z: -10}
+  m_LocalPosition: {x: -9.539871, y: 0.9952204, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703783570}
@@ -9376,7 +9376,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024768145}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -10057,7 +10057,7 @@ PrefabInstance:
     - target: {fileID: 4289797633773492064, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633773492068, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -10167,22 +10167,22 @@ PrefabInstance:
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 63
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -10192,7 +10192,7 @@ PrefabInstance:
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_text
-      value: Yay! There's some of the yummy chocolate Chonky is looking for.
+      value: Here's another yummy treat for Chonky!
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -10212,7 +10212,7 @@ PrefabInstance:
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 31
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844280, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -10239,12 +10239,12 @@ PrefabInstance:
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -51.5
+      value: -55.3
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.7
+      value: -44.9
       objectReference: {fileID: 0}
     - target: {fileID: 4289797633842844281, guid: 4aea7c0576d4574488ddca9663fd0570,
         type: 3}
@@ -15663,7 +15663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 78, y: -26.43}
+  m_AnchoredPosition: {x: 27.1, y: -20.6}
   m_SizeDelta: {x: 87.65, y: 29.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914330625
@@ -15684,11 +15684,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But not all chocolates only give score! The chocolate heart gives Chonky
-    an extra life too!
+  m_text: The magic cake gives Chonky the power to run over those nasty vegetables
+    --As long as the sparkles last!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f50f19d40d775274eb4c911a53141f3c, type: 2}
-  m_sharedMaterial: {fileID: 21270341749108384, guid: f50f19d40d775274eb4c911a53141f3c,
+  m_fontAsset: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346, type: 2}
+  m_sharedMaterial: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -15755,10 +15755,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1914330625}
-    characterCount: 91
+    characterCount: 104
     spriteCount: 0
-    spaceCount: 15
-    wordCount: 16
+    spaceCount: 18
+    wordCount: 19
     linkCount: 0
     lineCount: 5
     pageCount: 1

@@ -51,8 +51,22 @@ public class GameSession : MonoBehaviour
 
     private void ResetGameSession()
     {
-        SceneManager.LoadScene(0);
+        LoadMainMenu();
         Destroy(gameObject);
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+        public void LoadFirstLevel()
+    {
+        SceneManager.LoadScene("Level 1");
     }
 
     public void addScore(int amount){
@@ -64,5 +78,10 @@ public class GameSession : MonoBehaviour
     private void UpdateText(){
         livesText.text = lives.ToString();
         scoreText.text = score.ToString();
+    }
+
+        public void QuitGame()
+    {
+        Application.Quit();
     }
 }
