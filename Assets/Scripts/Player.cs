@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     [Header("States")]
     bool isAlive = true;
+    bool isFrozen = false;
     bool starPowered = false;
     int starPoweredCount = 0;
 
@@ -57,6 +58,8 @@ public class Player : MonoBehaviour
 
     private void Run()
     {
+        if(!isFrozen){
+
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
@@ -67,6 +70,10 @@ public class Player : MonoBehaviour
         
         }
         else{ myAnimatior.SetBool("isRunning", false); }
+        }
+        else{
+            myRigidbody.velocity = new Vector2(0, 0);
+        }
     }
 
     private void Jump(){
@@ -141,5 +148,12 @@ public class Player : MonoBehaviour
 
     public bool isStarPowered(){
         return starPoweredCount>0;
+    }
+
+    public void setFrozen(bool freeze){
+        isFrozen = freeze;
+        if(freeze){
+            myAnimatior.SetTrigger("Victory");
+        }
     }
 }

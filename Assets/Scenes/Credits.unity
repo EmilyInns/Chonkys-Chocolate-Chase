@@ -167,7 +167,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Level end SFX by Sauer2 on OpenGameArt.org
+  m_text: 'Level end SFX by Sauer2
+
+    Candy pickup SFXe by Luke.RUSTLTD
+
+    Powerup SFX by Eschwabe3
 
     Other SFX by Emily Inns
 
@@ -175,9 +179,7 @@ MonoBehaviour:
 
     Fonts are Minecraft by Craftron Gaming and
 
-    VCR OSD Mono by Riciery Leal
-
-'
+    VCR OSD Mono by Riciery Leal'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 68be6209e43b6564eba19520a6d0e346, type: 2}
   m_sharedMaterial: {fileID: 21270341749108384, guid: 68be6209e43b6564eba19520a6d0e346,
@@ -247,12 +249,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 284340655}
-    characterCount: 182
+    characterCount: 221
     spriteCount: 0
-    spaceCount: 31
-    wordCount: 32
+    spaceCount: 37
+    wordCount: 39
     linkCount: 0
-    lineCount: 5
+    lineCount: 7
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

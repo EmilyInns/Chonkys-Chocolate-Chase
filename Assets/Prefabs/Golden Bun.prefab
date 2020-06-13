@@ -207,3 +207,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1.5
+  VictoryVFX: {fileID: 2785721904637647083, guid: bb78b1288ade60c42811804d7393feb8,
+    type: 3}
