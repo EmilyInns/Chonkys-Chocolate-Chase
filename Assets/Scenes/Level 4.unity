@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.539871, y: 0.9952204, z: -10}
+  m_LocalPosition: {x: -9.539383, y: 0.9952204, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703783570}
@@ -16240,10 +16240,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 398591553, guid: d02f64e2c11cb24438e93682f1d3e816, type: 3}
-      propertyPath: DeathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 3c489ea54d9b3c14cbdefee371c14b74, type: 3}
     - target: {fileID: 5185255366950548605, guid: d02f64e2c11cb24438e93682f1d3e816,
         type: 3}
       propertyPath: m_Name

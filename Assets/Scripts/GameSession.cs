@@ -15,10 +15,21 @@ public class GameSession : MonoBehaviour
 
      void Awake()
     {
-        int numGameSessions = FindObjectsOfType<GameSession>().Length;
-        if(numGameSessions>1){ Destroy(gameObject); }
-        else{ DontDestroyOnLoad(gameObject); }
+       SetUpSingleton();
     }
+
+    private void SetUpSingleton()
+    {
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     void Start()
     {
         livesText.text = lives.ToString();
@@ -51,23 +62,10 @@ public class GameSession : MonoBehaviour
 
     private void ResetGameSession()
     {
-        LoadMainMenu();
+        SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
 
-    public void LoadMainMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
-    public void LoadCredits()
-    {
-        SceneManager.LoadScene("Credits");
-    }
-
-        public void LoadFirstLevel()
-    {
-        SceneManager.LoadScene("Level 1");
-    }
 
     public void addScore(int amount){
         Debug.Log("Adding " + amount);
@@ -80,8 +78,5 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-        public void QuitGame()
-    {
-        Application.Quit();
-    }
+
 }
