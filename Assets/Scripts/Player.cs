@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     [Header("States")]
     bool isAlive = true;
     bool starPowered = false;
+    int starPoweredCount = 0;
 
 [Header ("Cached Component References")]
     Rigidbody2D myRigidbody;
@@ -114,16 +115,16 @@ public class Player : MonoBehaviour
         public void StarPower()
     {
         Debug.Log("In starpower");
-        if(!starPowered)
-        {
+       // if(!starPowered)
+       // {
             StartCoroutine(PoweredUp());
-        }
+       // }
         
     }
 
     private IEnumerator PoweredUp()
     {
-        starPowered = true;
+        starPoweredCount++;
         Debug.Log("starpowered!");
         GetComponentInChildren<SpriteRenderer>().color = new Color(255,23,26,255);
         var starVFXRotation = new Vector3(-90,0,1);
@@ -133,12 +134,12 @@ public class Player : MonoBehaviour
         StarVFXobject.transform.parent = gameObject.transform;
         
         yield return new WaitForSeconds(starPowerTime);
-        starPowered = false;
+        starPoweredCount--;
         Debug.Log("star end");
         GetComponentInChildren<SpriteRenderer>().color = new Color(255,255,255,255);
     }
 
     public bool isStarPowered(){
-        return starPowered;
+        return starPoweredCount>0;
     }
 }
