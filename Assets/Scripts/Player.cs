@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
     [SerializeField] GameObject StarVFX;
     [SerializeField] AudioClip JumpSound;
+    [SerializeField] AudioClip DeathSound;
 
     [Header("States")]
     bool isAlive = true;
@@ -101,6 +102,7 @@ public class Player : MonoBehaviour
         deathKick.x = Mathf.Sign(myRigidbody.velocity.x)*deathKick.x * -1;
         myRigidbody.velocity = deathKick;
         myAnimatior.SetTrigger("Die");
+        AudioSource.PlayClipAtPoint(DeathSound, Camera.main.transform.position, soundVolume*2);
         yield return new WaitForSeconds(deathTime);
         FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }

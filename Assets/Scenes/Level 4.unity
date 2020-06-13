@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.532028, y: 0.9952204, z: -10}
+  m_LocalPosition: {x: -9.548172, y: 0.9952204, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703783570}
@@ -9667,6 +9667,75 @@ Transform:
   m_Father: {fileID: 677683196868033108}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1208331222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 60.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261846667980721387, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344993200134806411, guid: 533f8882a8d91aa47b9cc49ea24797ce,
+        type: 3}
+      propertyPath: m_Name
+      value: Golden Bun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 533f8882a8d91aa47b9cc49ea24797ce, type: 3}
 --- !u!4 &1229151498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3206333339628188554, guid: c51a40edcbb2a6447b4ebadf9d235efa,
@@ -16172,25 +16241,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 398591553, guid: d02f64e2c11cb24438e93682f1d3e816, type: 3}
-      propertyPath: StarVFX
+      propertyPath: DeathSound
       value: 
-      objectReference: {fileID: 3045593446739591575, guid: 0d3fadb7445a4204bbc91bc7d1db67c0,
-        type: 3}
-    - target: {fileID: 5185255366937058297, guid: d02f64e2c11cb24438e93682f1d3e816,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5185255366937058297, guid: d02f64e2c11cb24438e93682f1d3e816,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5185255366937058297, guid: d02f64e2c11cb24438e93682f1d3e816,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 3c489ea54d9b3c14cbdefee371c14b74, type: 3}
     - target: {fileID: 5185255366950548605, guid: d02f64e2c11cb24438e93682f1d3e816,
         type: 3}
       propertyPath: m_Name

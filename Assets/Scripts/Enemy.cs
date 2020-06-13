@@ -6,7 +6,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 3f;
+    [SerializeField] float soundVolume = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
+
+    [SerializeField] AudioClip DeathSound;
+
 
     Rigidbody2D myRigidBody;
     SpriteRenderer mySprite;
@@ -58,6 +62,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
     // myRigidBody.velocity = deathKick;
+    AudioSource.PlayClipAtPoint(DeathSound, Camera.main.transform.position, soundVolume);
        Destroy(gameObject);
     }
 }
