@@ -13,7 +13,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(0);
+        FindObjectOfType<GameSession>().ResetGameSession();
     }
     public void LoadCredits()
     {

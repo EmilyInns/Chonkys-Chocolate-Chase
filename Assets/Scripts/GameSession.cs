@@ -60,7 +60,7 @@ public class GameSession : MonoBehaviour
         UpdateText();
     }
 
-    private void ResetGameSession()
+    public void ResetGameSession()
     {
         SceneManager.LoadScene(0);
         Destroy(gameObject);
