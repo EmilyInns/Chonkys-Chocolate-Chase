@@ -24,7 +24,7 @@ public class LevelExit : MonoBehaviour
         var VFXRotation = new Vector3(-90,0,1);
         Quaternion myRotation = Quaternion.identity;
         myRotation.eulerAngles = VFXRotation;
-        
+
             GameObject VictoryVFXobject = Instantiate(VictoryVFX, transform.position, myRotation);
             if(!audioSource.isPlaying){ audioSource.Play(); }
             StartCoroutine(LoadNextLevel());
