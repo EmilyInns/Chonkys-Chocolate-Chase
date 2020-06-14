@@ -191,7 +191,7 @@ MonoBehaviour:
   soundVolume: 5
   deathKick: {x: 10, y: 15}
   StarVFX: {fileID: 3045593446739591575, guid: 0d3fadb7445a4204bbc91bc7d1db67c0, type: 3}
-  JumpSound: {fileID: 8300000, guid: 0f8fc4ff3f62fcb41a2ea25c9b42f8c5, type: 3}
+  JumpSound: {fileID: 8300000, guid: 465de32457647dd42a6e6f289c15c681, type: 3}
   DeathSound: {fileID: 8300000, guid: 3c489ea54d9b3c14cbdefee371c14b74, type: 3}
 --- !u!82 &1273827555
 AudioSource:
